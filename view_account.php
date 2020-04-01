@@ -6,7 +6,7 @@
                           {
                             die("Database Connection Failed" . mysqli_error());
                           }
-						  
+
 
   $query="SELECT * from deductions WHERE deduction_id='1'";
   $res=mysqli_query($conn,$query) or die("Error in Query" . mysqli_error($conn));
@@ -32,21 +32,7 @@
     <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
-    <title></title>
-
-    <script>
-      <!--
-        var ScrollMsg= "Pride Payroll - "
-        var CharacterPosition=0;
-        function StartScrolling() {
-        document.title=ScrollMsg.substring(CharacterPosition,ScrollMsg.length)+
-        ScrollMsg.substring(0, CharacterPosition);
-        CharacterPosition++;
-        if(CharacterPosition > ScrollMsg.length) CharacterPosition=0;
-        window.setTimeout("StartScrolling()",150); }
-        StartScrolling();
-      // -->
-    </script>
+    <title>Pridepoint Bank - Payroll</title>
 
     <link href="assets/must.png" rel="shortcut icon">
     <link href="assets/css/justified-nav.css" rel="stylesheet">
@@ -89,19 +75,19 @@
                           {
                             die("Database Connection Failed" . mysqli_error());
                           }
-						  
-        
+
+
 		$id=$_REQUEST['emp_id'];
-		
+
 
 //print"$id";
 
-		
+
         //$query1 = "SELECT * from employee where emp_id='".$id."'";
        $query1 = "SELECT * from employee where emp_id='$id'";
-       
-	   
-	   
+
+
+
 	    $res1 = mysqli_query($conn1,$query1) or die ( mysqli_error());
 
 
@@ -115,7 +101,7 @@ $conn2 = mysqli_connect('localhost', 'adiwal', 'adiwal@1.1', 'payroll');
 
 
         $query2  = "SELECT * from overtime";
-		$res2=mysqli_query($conn2,$query2) or die ( mysqli_error()); 
+		$res2=mysqli_query($conn2,$query2) or die ( mysqli_error());
         while($row=mysqli_fetch_array($res2))
         {
           $rate   = $row['rate'];
@@ -133,7 +119,7 @@ $conn3 = mysqli_connect('localhost', 'adiwal', 'adiwal@1.1', 'payroll');
 
 
         $query3  = "SELECT * from salary";
-		
+
 		$res3=mysqli_query($conn3,$query3) or die ( mysqli_error());
         while($row3=mysqli_fetch_array($res3))
         {
@@ -205,7 +191,7 @@ $conn3 = mysqli_connect('localhost', 'adiwal', 'adiwal@1.1', 'payroll');
       <!-- this modal is for my Colins -->
       <div class="modal fade" id="colins" role="dialog">
         <div class="modal-dialog modal-sm">
-              
+
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header" style="padding:20px 50px;">

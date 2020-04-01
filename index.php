@@ -19,8 +19,8 @@
 
   $query  = "SELECT * from deductions";
   $res=mysqli_query($conn,$query) or die("Error in Query" . mysqli_error($conn));
-  
-  
+
+
   while($row=mysqli_fetch_array($res))
   {
     $id           = $row['deduction_id'];
@@ -46,7 +46,7 @@
     <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
-    <title></title>
+    <title>Pridepoint Bank - Payroll</title>
 
     <script>
       <!--
@@ -107,7 +107,7 @@
       <!-- this modal is for my INSTRUCTOR -->
       <div class="modal fade" id="instructor" role="dialog">
         <div class="modal-dialog modal-sm">
-              
+
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header" style="padding:20px 50px;">
@@ -126,7 +126,7 @@
       <!-- this modal is for my Colins -->
       <div class="modal fade" id="colins" role="dialog">
         <div class="modal-dialog modal-sm">
-              
+
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header" style="padding:20px 50px;">
