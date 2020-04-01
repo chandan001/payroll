@@ -7,8 +7,8 @@
                             die("Database Connection Failed" . mysqli_error());
                           }
 
-                      
-                          
+
+
 $query="select * from deductions where deduction_id='1'";
   $res=mysqli_query($conn,$query) or die("Error in Query" . mysqli_error($conn));
 
@@ -34,21 +34,7 @@ $query="select * from deductions where deduction_id='1'";
     <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
-    <title></title>
-
-    <script>
-      <!--
-        var ScrollMsg= "Payroll Management System - "
-        var CharacterPosition=0;
-        function StartScrolling() {
-        document.title=ScrollMsg.substring(CharacterPosition,ScrollMsg.length)+
-        ScrollMsg.substring(0, CharacterPosition);
-        CharacterPosition++;
-        if(CharacterPosition > ScrollMsg.length) CharacterPosition=0;
-        window.setTimeout("StartScrolling()",150); }
-        StartScrolling();
-      // -->
-    </script>
+    <title>Pridepoint Bank - Payroll</title>
 
     <link href="assets/must.png" rel="shortcut icon">
     <link href="assets/css/justified-nav.css" rel="stylesheet">
@@ -113,8 +99,8 @@ $query="select * from deductions where deduction_id='1'";
                             die("Database Connection Failed" . mysql_error());
                           }
 
-                      
-                          
+
+
 						  $query="select * from employee order by emp_id asc";
                           $res=mysqli_query($conn,$query) or die("Error in Query" . mysqli_error($conn1));
 						  while($row=mysqli_fetch_array($res))
@@ -141,7 +127,7 @@ $query="select * from deductions where deduction_id='1'";
 
                         <?php } ?>
                       </tbody>
-                      
+
                         <tr class="info">
                           <th><p align="center">Name</p></th>
                           <th><p align="center">Gender</p></th>
@@ -159,7 +145,7 @@ $query="select * from deductions where deduction_id='1'";
       <!-- this modal is for ADDING an EMPLOYEE -->
       <div class="modal fade" id="addEmployee" role="dialog">
         <div class="modal-dialog">
-        
+
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header" style="padding:20px 50px;">
@@ -236,7 +222,7 @@ $query="select * from deductions where deduction_id='1'";
       <!-- this modal is for my Colins -->
       <div class="modal fade" id="colins" role="dialog">
         <div class="modal-dialog modal-sm">
-              
+
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header" style="padding:20px 50px;">
