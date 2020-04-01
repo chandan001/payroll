@@ -41,6 +41,23 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
     <title>Pridepoint Bank - Payroll</title>
+<<<<<<< HEAD
+=======
+
+    <script>
+      <!--
+        var ScrollMsg= "Pride Payroll  - "
+        var CharacterPosition=0;
+        function StartScrolling() {
+        document.title=ScrollMsg.substring(CharacterPosition,ScrollMsg.length)+
+        ScrollMsg.substring(0, CharacterPosition);
+        CharacterPosition++;
+        if(CharacterPosition > ScrollMsg.length) CharacterPosition=0;
+        window.setTimeout("StartScrolling()",150); }
+        StartScrolling();
+      // -->
+    </script>
+>>>>>>> 040c8275a7076f8486e1b9d714f4ef7b7d0f0429
 
     <link href="assets/must.png" rel="shortcut icon">
     <link href="assets/css/justified-nav.css" rel="stylesheet">
